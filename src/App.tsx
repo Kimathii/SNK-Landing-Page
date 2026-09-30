@@ -4,11 +4,11 @@ import LandingPage from './screens/LandingPage'
 
 function MainApp() {
   const handleSignUp = () => {
-    window.location.href = 'https://snk-main-app.vercel.app/signup' // Or whatever the real app URL will be
+    window.location.href = 'https://snk-main-app.vercel.app' // Or whatever the real app URL will be
   }
 
   const handleLogin = () => {
-    window.location.href = 'https://snk-main-app.vercel.app/login' // Or whatever the real app URL will be
+    window.location.href = 'https://snk-main-app.vercel.app' // Or whatever the real app URL will be
   }
 
   return (
