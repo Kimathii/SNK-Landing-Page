@@ -7,7 +7,8 @@
 .lc-stars .lc-star-earned { color: #f5d663; }
 .lc-progress { color: var(--lp-muted); font-size: .85rem; margin-left: 8px; }
 .lc-primary { padding: 13px 22px; min-height: 48px; border-radius: 28px; background: var(--lp-green); color: #0b3020; font-weight: 800 !important; display: flex; align-items: center; gap: 20px; }
-.lc-playground { background: #192e44; min-width: 0; padding: 24px; }
+.lc-playground { background: #192e44; min-width: 0; padding: 24px; position: relative; overflow: hidden; }
+.lc-playground::before { content: ''; position: absolute; inset: 0; background: url('../../assets/ankara5.jfif') center / cover no-repeat; opacity: 0.1; pointer-events: none; }
 .lc-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 800; }
 .lc-sky { height: 250px; display: flex; gap: 16px; padding: 18px 12px; border-bottom: 1px dashed #536b81; margin-bottom: 22px; }
 .lc-lane { flex: 1; min-width: 0; display: flex; justify-content: center; align-items: flex-start; }

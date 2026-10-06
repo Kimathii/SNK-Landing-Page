@@ -5,13 +5,13 @@
 }
 
 :root {
-  --green-primary: #2ECC71;
-  --green-dark: #27ae60;
-  --blue-primary: #4A4FD4;
-  --blue-light: #6B70E8;
-  --yellow-primary: #F5C518;
-  --orange-primary: #FF6B35;
-  --red-primary: #E74C3C;
+  --green-primary: #6B8E23; /* earthy green */
+  --green-dark: #4F6B17;
+  --blue-primary: #2C5F2D; /* deep teal */
+  --blue-light: #3A7A3F;
+  --yellow-primary: #CFAE2B; /* gold */
+  --orange-primary: #C1440E; /* burnt orange */
+  --red-primary: #B33A21; /* terracotta */
   --white: #FFFFFF;
   --gray-100: #F5F5F5;
   --gray-200: #E8E8E8;
@@ -134,7 +134,7 @@ body {
 .app-wrapper--desktop {
   width: 100vw;
   height: 100vh;
-  background: #F3F4F9;
+  background: url('../../assets/ankara5.jfif') no-repeat center center / cover; /* African‑inspired background */
   display: flex;
   flex-direction: row;
   align-items: stretch;

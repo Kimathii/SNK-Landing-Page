@@ -40,7 +40,8 @@
 .lp-primary:hover { background: #83edaf; }
 .lp-hero-actions .speak-btn { color: var(--lp-muted); background: transparent; border: 0; min-height: 44px; font-size: .85rem; }
 .lp-hero-note { margin-top: 18px; color: var(--lp-muted); font-size: .78rem; }
-.lp-comfort { display: flex; justify-content: space-between; gap: 24px; padding: 22px 25px; background: var(--lp-panel); border: 1px solid var(--lp-line); border-radius: 16px; }
+.lp-comfort { display: flex; justify-content: space-between; gap: 24px; padding: 22px 25px; background: var(--lp-panel); border: 1px solid var(--lp-line); border-radius: 16px; position: relative; overflow: hidden; }
+.lp-comfort::before { content: ''; position: absolute; inset: 0; background: url('../../assets/ankara3.jfif') center / cover no-repeat; opacity: 0.08; pointer-events: none; }
 .lp-comfort > div:first-child { display: flex; align-items: center; gap: 14px; }
 .lp-comfort-icon { font-family: 'Lexend', sans-serif; color: #c2bdf9; font-size: 1.4rem; }
 .lp-comfort h2 { font-size: .95rem; }
@@ -54,7 +55,8 @@
 .lp-section .lp-eyebrow { margin-bottom: 10px; }
 .lp-section h2, .lp-final-cta h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 900; line-height: 1.25; letter-spacing: -.025em; }
 .lp-section-heading > p { font-size: .9rem; color: var(--lp-muted); }
-.lp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.lp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; position: relative; }
+.lp-steps::before { content: ''; position: absolute; inset: -10px -15px; background: url('../../assets/ankara4.jfif') center / cover no-repeat; opacity: 0.05; pointer-events: none; border-radius: 16px; }
 .lp-step { border-top: 1px solid var(--lp-line); padding-top: 23px; }
 .lp-step-number { font-size: .85rem; font-weight: 800; color: var(--lp-green); display: inline-grid; place-items: center; width: 38px; height: 38px; border: 1px solid #3f6756; border-radius: 50%; margin-bottom: 20px; }
 .lp-step:nth-child(2) .lp-step-number { color: #ccc3ff; border-color: #5a547a; }
@@ -62,7 +64,8 @@
 .lp-step h3 { font-size: 1.15rem; margin-bottom: 9px; }
 .lp-step p { color: var(--lp-muted); font-size: .95rem; max-width: 34ch; }
 .lp-game-feature { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--lp-line); border-radius: 22px; overflow: hidden; background: var(--lp-panel); }
-.lp-game-art { display: flex; flex-direction: column; align-items: center; justify-content: center; background: #202c50; min-height: 355px; position: relative; padding: 35px 20px; }
+.lp-game-art { display: flex; flex-direction: column; align-items: center; justify-content: center; background: #202c50; min-height: 355px; position: relative; padding: 35px 20px; overflow: hidden; }
+.lp-game-art::before { content: ''; position: absolute; inset: 0; background: url('../../assets/ankara1.jfif') center / cover no-repeat; opacity: 0.12; pointer-events: none; }
 .lp-word-tiles { display: flex; gap: 12px; }
 .lp-word-tiles span { display: grid; place-items: center; width: 78px; height: 90px; border-radius: 17px; font: 700 3rem 'Lexend', sans-serif; color: #173e30; background: #98e6bb; box-shadow: 0 7px 0 #4b9a77; transform: rotate(-8deg); }
 .lp-word-tiles span:nth-child(2) { background: #f5d663; color: #514423; box-shadow: 0 7px 0 #a18b47; transform: translateY(-12px) rotate(3deg); }
@@ -79,7 +82,8 @@
 .lp-game-copy li > .svg-inline--fa { color: var(--lp-green); margin-right: 12px; }
 .lp-text-link { background: none; color: var(--lp-green); font-weight: 800 !important; padding-block: 10px; text-align: left; }
 .lp-text-link span { margin-left: 24px; }
-.lp-together { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; }
+.lp-together { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; position: relative; }
+.lp-together::before { content: ''; position: absolute; inset: -20px -30px; background: url('../../assets/ankara3.jfif') center / cover no-repeat; opacity: 0.04; pointer-events: none; border-radius: 24px; }
 .lp-together > div > p:not(.lp-eyebrow) { color: var(--lp-muted); margin-top: 22px; max-width: 37ch; }
 .lp-needs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .lp-needs span { color: #c4c5f9; border: 1px solid #48486b; padding: 5px 12px; border-radius: 100px; font-size: .75rem; }
@@ -89,12 +93,15 @@
 .lp-family-notes h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .lp-family-notes p { color: var(--lp-muted); font-size: .9rem; }
 .lp-final-wrap { padding-block: 88px; }
-.lp-final-cta { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 45px; background: #15352f; border: 1px solid #315d47; border-radius: 22px; }
+.lp-final-cta { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 45px; background: #15352f; border: 1px solid #315d47; border-radius: 22px; position: relative; overflow: hidden; }
+.lp-final-cta::before { content: ''; position: absolute; inset: 0; background: url('../../assets/ankara4.jfif') center / cover no-repeat; opacity: 0.1; pointer-events: none; }
 .lp-final-star { font-size: 4rem; color: var(--lp-green); }
 .lp-final-cta > div { flex: 1; }
 .lp-final-cta .lp-eyebrow { margin-bottom: 12px; }
 .lp-final-cta p:last-child { color: #bed5ca; margin-top: 12px; }
-.lp-footer { background: #091321; border-top: 1px solid var(--lp-line); overflow: hidden; }
+.lp-footer { background: #091321; border-top: 1px solid var(--lp-line); overflow: hidden; position: relative; }
+.lp-footer::before { content: ''; position: absolute; inset: 0; background: url('../../assets/ankara2.jfif') center / cover no-repeat; opacity: 0.06; pointer-events: none; z-index: 0; }
+.lp-footer > * { position: relative; z-index: 1; }
 .lp-footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.15fr; gap: 35px; padding-top: 54px; }
 .lp-footer-brand p { margin-block: 25px 18px; color: var(--lp-muted); font-size: .9rem; }
 .lp-footer-brand > span { color: #9aaac0; font-size: .75rem; display: block; }
